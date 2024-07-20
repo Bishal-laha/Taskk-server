@@ -27,7 +27,7 @@ app.get('/globe-data', (req, res) => {
             return;
         }
         const jsonData = JSON.parse(data);
-        res.setHeader('Content-Type', 'application/json');
+        // res.setHeader('Content-Type', 'application/json');
         res.status(200).send(jsonData);
     });
 });
